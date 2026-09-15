@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace AccesoDatos.Models
 {
     public class DetalleAlquiler
     {
-        public int Id_detalle { get; set; }    // PK, necesita [Key] o llamarse Id/DetalleAlquilerId
+        [Key]
+        public int Id_detalle { get; set; }
         public int Id_alquiler { get; set; }   // FK -> Alquiler
         public Alquiler Alquiler { get; set; } // navegación
         public int Patente { get; set; }       // FK -> Vehículo

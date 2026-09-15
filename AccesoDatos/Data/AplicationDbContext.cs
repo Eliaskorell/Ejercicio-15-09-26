@@ -14,5 +14,7 @@ namespace AccesoDatos.Data
         }
         public DbSet<Alquiler> Alquileres { get; set; }
         public DbSet<DetalleAlquiler> DetalleAlquileres { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Vehículo> Vehiculos { get; set; }
     }
 }
