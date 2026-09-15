@@ -6,13 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AccesoDatos.Data
 {
-    public class AplicationDbContext : DbContext
+    internal class AplicationDbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Data Source=alquileres.db");
-        }
-        public DbSet<Alquiler> Alquileres { get; set; }
-        public DbSet<DetalleAlquiler> DetalleAlquileres { get; set; }
     }
 }
