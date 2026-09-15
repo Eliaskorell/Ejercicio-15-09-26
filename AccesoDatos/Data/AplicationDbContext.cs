@@ -6,7 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AccesoDatos.Data
 {
-    internal class AplicationDbContext
+    public class AplicationDbContext : DbContext
     {
+        public DbSet<Alquiler> Alquileres { get; set; }
     }
 }
