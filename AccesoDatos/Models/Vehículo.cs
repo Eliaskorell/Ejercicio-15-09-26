@@ -6,6 +6,7 @@ namespace AccesoDatos.Models
 {
     public class Vehículo
     {
+        public ICollection<DetalleAlquiler> DetalleAlquileres { get; set; }
         public int Patente { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
